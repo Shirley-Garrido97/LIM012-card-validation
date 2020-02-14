@@ -1,0 +1,53 @@
+body{
+  margin-top: 0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+  padding:0px;
+  background-image:url(IMG/fondo5.png);
+  background-size:100%;
+  background-attachment:fixed;
+  font-family:"Calibri", sans-serif;
+}
+
+fieldset{
+  width:250px;
+  height:300px;
+  margin-top: 0px;
+  margin-left:450px;
+  margin-right:450px;
+  margin-bottom:0px;
+  padding:25px;
+}
+
+#numCard{
+  text-align:center;
+  width:180px;
+}
+
+#btnValidarCard{
+  background:#e92357;
+  border-radius:1000px;
+  box-shadow:0 1px #444444;
+  width:140px;
+  height:40px;
+  color:#ffffff;
+  display:inline-block;
+  font:normal bold 24px/30px "Calibri", sans-serif;
+  text-align:center;
+  text-shadow:1px 1px #000000;
+}
+
+.franquisiasCard{
+  width:200px;
+  height:50px;
+}
+
+.logoProject{
+  width:500px;
+  height:200px;
+  margin-top: 0px;
+  margin-left:430px;
+  margin-right:450px;
+  margin-bottom:0px;
+}

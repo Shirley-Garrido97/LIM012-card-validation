@@ -6,10 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <h1>jojo</h1>
+    <header>
+      <img class="logoProject"src="IMG/logo-project.png"></img>
+    </header>
+    <main>
+      <!-- Creando campo para los digitos de la Tarjeta Original -->
+      <form action="" method="get">
+        <center>
+          <label>
+            <fieldset>
+              <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
+              <legend><strong>VALIDADOR DE TARJETA</strong></legend>
+              <br>
+              <input type="text" id = "numCard" minlength="13" maxlength="16" placeholder=" Ingresar N° de Tarjeta" required="" pattern="[0-9]+" pattern="![a-z]">
+              <br>
+              <br>
+              <button type="button" id="btnValidarCard">Validar</button>
+            </fieldset>
+          </label>
+        </center>
+      </form>
+    </main>
+    <footer>
+    <br>
+    <center><strong>
+      © Copyright by Shirley Garrido Navarro - 2020
+    </center></strong>
+    </br>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
