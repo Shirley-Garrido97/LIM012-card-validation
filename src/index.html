@@ -6,28 +6,96 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
       <img class="logoProject"src="IMG/logo-project.png"></img>
     </header>
+    <div id="vista1">
     <main>
       <!-- Creando campo para los digitos de la Tarjeta Original -->
       <form action="" method="get">
         <center>
+          <img class="procesos"src="IMG/proceso2.png"></img>
           <label>
-            <fieldset>
+            <fieldset class="fieldset">
               <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
               <legend><strong>VALIDADOR DE TARJETA</strong></legend>
               <br>
-              <input type="text" id = "numCard" minlength="13" maxlength="16" placeholder=" Ingresar N° de Tarjeta" required="" pattern="[0-9]+" pattern="![a-z]">
+              <input type="text" id = "numCard" minlength="13" maxlength="16" pattern="!=[azAZ]" pattern="[0-9]+" placeholder=" 💳 Ingresar N° de Tarjeta " required >
               <br>
               <br>
               <button type="button" id="btnValidarCard">Validar</button>
+              <br>
+              <br>
+              <button type="button" id="btnRegresar">Regresar</button>
+              <center><img class="avatar"src="IMG/verificando.gif"></img></center>
             </fieldset>
           </label>
         </center>
       </form>
+    </div>
+<!-- Creando campo para los demas campos de la Tarjeta  -->
+    <div id="vista2" class="ocultar">
+
+      <form action="" method="get">
+        <center>
+          <img class="procesos"src="IMG/proceso3.png"></img>
+          <label>
+            <fieldset class="fieldset">
+              <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
+              <legend><strong> PAGA RÁPIDO CON PAGENTO </strong></legend>
+              <br>
+
+              <select id="mes">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              </select>
+
+              <select id="año">
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              </select>
+
+              <input type="text" id = "seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV " required="" >
+              <br>
+              <input type="text" id = "nameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Nombre del Titular " required="" >
+              <br>
+              <input type="text" id = "lastnameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Apellido del Titular " required="" >
+              <br>
+              <input type="email" id = "email" placeholder=" 📧 Email " required="" >
+              <br>
+              <br>
+              <button type="button" id="btnPagar">Pagar</button>
+              <br>
+              <br>
+              <button type="button" id="btnRegresar">Regresar</button>
+            </fieldset>
+          </label>
+        </center>
+      </form>
+
+    </div>
     </main>
-    <footer>
+    <footer class="footer">
     <br>
     <center><strong>
       © Copyright by Shirley Garrido Navarro - 2020

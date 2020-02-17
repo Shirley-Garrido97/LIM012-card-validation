@@ -5,24 +5,96 @@ body{
   margin-bottom:0px;
   padding:0px;
   background-image:url(IMG/fondo5.png);
-  background-size:100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment:fixed;
   font-family:"Calibri", sans-serif;
 }
 
-fieldset{
+.ocultar {
+  display: none;
+}
+
+.fieldset{
   width:250px;
   height:300px;
-  margin-top: 0px;
-  margin-left:450px;
-  margin-right:450px;
+  margin-top:0px;
+  margin-left:center;
+  margin-right:center;
   margin-bottom:0px;
   padding:25px;
+}
+
+.footer{
+  margin-top:20px;
+  margin-left:center;
+  margin-right:center;
+  margin-bottom:0px;
 }
 
 #numCard{
   text-align:center;
   width:180px;
+  height:19px;
+  box-shadow:!important;
+}
+
+#vencimiento{
+  text-align:center;
+  width:90px;
+  height:19px;
+  box-shadow:!important;
+  -webkit-appearance: none;
+  -webkit-writing-mode: horizontal-tb !important;
+}
+
+#mes{
+  text-align:center;
+  width:45px;
+  height:25px;
+  box-shadow:!important;
+}
+
+#año{
+  text-align:center;
+  width:45px;
+  height:25px;
+  box-shadow:!important;
+}
+
+#seguridad{
+  text-align:center;
+  width:90px;
+  height:19px;
+  box-shadow:!important;
+}
+
+#nameTitular{
+  text-align:center;
+  width:188px;
+  height:19px;
+  margin-top:3px;
+  box-shadow:!important;
+  text-align: left;
+}
+
+#lastnameTitular{
+  text-align:center;
+  width:188px;
+  height:19px;
+  margin-top:3px;
+  box-shadow:!important;
+  text-align: left;
+}
+
+#email{
+  text-align:center;
+  width:188px;
+  height:19px;
+  margin-top:3px;
+  box-shadow:!important;
+  text-align: left;
 }
 
 #btnValidarCard{
@@ -38,15 +110,55 @@ fieldset{
   text-shadow:1px 1px #000000;
 }
 
+#btnRegresar{
+background:#2d98d6;
+border-radius:1000px;
+box-shadow:0 1px #444444;
+width:140px;
+height:40px;
+color:#ffffff;
+display:inline-block;
+font:normal bold 24px/30px "Calibri", sans-serif;
+text-align:center;
+text-shadow:1px 1px #000000;
+}
+
+#btnPagar{
+  background:#bfe330;
+  border-radius:1000px;
+  box-shadow:0 1px #444444;
+  width:140px;
+  height:40px;
+  color:#ffffff;
+  display:inline-block;
+  font:normal bold 24px/30px "Calibri", sans-serif;
+  text-align:center;
+  text-shadow:1px 1px #000000;
+}
+
+.procesos{
+  width:310px;
+  height:80px;
+  margin-top: -30px;
+
+}
+
 .franquisiasCard{
   width:200px;
   height:50px;
+  margin-top:-13px;
+}
+
+.avatar{
+  width:150px;
+  height:110px;
+  margin-top:0px;
 }
 
 .logoProject{
   width:500px;
-  height:200px;
-  margin-top: 0px;
+  height:160px;
+  margin-top: -10px;
   margin-left:430px;
   margin-right:450px;
   margin-bottom:0px;
