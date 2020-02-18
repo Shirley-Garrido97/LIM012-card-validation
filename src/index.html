@@ -10,17 +10,17 @@
       <img class="logoProject"src="IMG/logo-project.png"></img>
     </header>
     <main>
-
 <!-- Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar -->
+      <div id="vista1">
+        <form action="" method="get">
+          <center>
+            <img class="procesos"src="IMG/proceso1.png"></img>
 
-    <div id="vista1">
-      <form action="" method="get">
-        <center>
-          <img class="procesos"src="IMG/proceso1.png"></img>
             <fieldset class="fieldset">
               <img class="egresada"src="IMG/egresada.png"></img>
               <img class="alumna"src="IMG/alumna.png"></img>
               <legend><strong> DATOS DE PAGO</strong></legend>
+
               <br>
               <strong>
               <label for="core"> C.Core:</label>
@@ -33,34 +33,39 @@
                 <option>📍 Lima 11 </option>
                 <option>📍 Lima 12 </option>
               </select>
+
               <br>
               <label for="modalidad"> Estado: </label>
               <select id="modalidad">
                 <option> 💻 Alumna</option>
                 <option> 🎓 Egresada</option>
               </select>
+
               <br>
               <label for="Codigo"> Código:</label>
               <input type="text" id = "codigo" minlength="9" maxlength="9" pattern="[azAZ]" pattern="[0-9]+" placeholder=" 🕵🏻‍ Ingresar aquí Código " required >
+
               <br>
               <label for="monto"> Monto:</label>
               <input type="text" id = "monto" minlength="5" maxlength="14000"  pattern="[0-9]+" placeholder=" 💸 Ingresar Monto a Pagar " required >
-             </strong>
-             <br>
-             <br>
-             <button type="button" id="btnSiguiente">Siguiente</button>
-          </fieldset>
-        </center>
-      </form>
-    </div>
+
+              </strong>
+              <br>
+              <br>
+              <button type="button" id="btnSiguiente">Siguiente</button>
+
+            </fieldset>
+          </center>
+        </form>
+      </div>
 
 <!-- Creando formulario para validador de tarjetas -->
 
-    <div id="vista2">
-      <form action="" method="get">
-        <center>
-          <img class="procesos"src="IMG/proceso2.png"></img>
-          <label>
+      <div id="vista2">
+        <form action="" method="get">
+          <center>
+            <img class="procesos"src="IMG/proceso2.png"></img>
+            <label>
             <fieldset class="fieldset">
               <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
               <legend><strong>VALIDADOR DE TARJETA</strong></legend>
@@ -119,24 +124,27 @@
               <option>25</option>
               </select>
 
+              <br>
               <input type="text" id = "seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV " required="" >
+
               <br>
               <input type="text" id = "nameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Nombre del Titular " required="" >
+
               <br>
               <input type="text" id = "lastnameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Apellido del Titular " required="" >
+
               <br>
               <input type="email" id = "email" placeholder=" 📧 Email " required="" >
-              <br>
+
               <br>
               <button type="button" id="btnPagar">Pagar</button>
-              <br>
+
               <br>
               <button type="button" id="btnRegresar2">Regresar</button>
             </fieldset>
           </label>
         </center>
       </form>
-
     </div>
 
 <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
@@ -149,32 +157,31 @@
             <fieldset class="fieldset">
               <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
               <legend><strong> RESUMEN DE PAGO </strong></legend>
-              <br>
-              
-                  <input type="text" id = "seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV " required="" >
-                  <br>
-                  <input type="text" id = "nameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Nombre del Titular " required="" >
-                  <br>
-                  <input type="text" id = "lastnameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Apellido del Titular " required="" >
-                  <br>
-                  <input type="email" id = "email" placeholder=" 📧 Email " required="" >
-                  <br>
-                  <br>
-                  <button type="button" id="btnFinalizar">Finalizar</button>
-                </fieldset>
-              </label>
-            </center>
-          </form>
-        </div>
 
-    </main>
-    <footer class="footer">
-    <br>
-    <center><strong>
-      © Copyright by Shirley Garrido Navarro - 2020
-    </center></strong>
-    </br>
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+                            <!--Informacion de pago
+                            Laboratoria S.A.C - RUC 8947397473
+                            💳 numero de tarjeta con ####
+                            👥 Nombre del Titular
+                            💻 Alumna
+                            🎓 Egresada
+                           🕵🏻‍ Ingresar aquí Código
+                           💻 Alumna
+                           🎓 Egresada
+                           💸 Monto Pagado -->
+
+              <button type="button" id="btnFinalizar">Finalizar</button>
+            </fieldset>
+          </label>
+        </center>
+      </form>
+    </div>
+ </main>
+ <footer class="footer">
+   <br>
+   <center><strong>
+     © Copyright by Shirley Garrido Navarro - 2020
+   </center></strong>
+ </footer>
+ <script src="index.js" type="module"></script>
+</body>
 </html>
