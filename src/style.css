@@ -18,7 +18,7 @@ body{
 
 .fieldset{
   width:250px;
-  height:300px;
+  height:350px;
   margin-top:0px;
   margin-left:center;
   margin-right:center;
@@ -33,41 +33,87 @@ body{
   margin-bottom:0px;
 }
 
+
+.egresada{
+  width:70px;
+  height:80px;
+  margin-top:0px;
+  margin-left:center;
+  margin-right:center;
+  margin-bottom:10px;
+  margin-top:0px;
+}
+
+.alumna{
+  width:70px;
+  height:80px;
+  margin-top:0px;
+  margin-left:center;
+  margin-right:center;
+  margin-bottom:10px;
+  margin-top:0px;
+}
+
+#core{
+  text-align:center;
+  width:186px;
+  height:25px;
+  margin-top:3px;
+  text-align: left;
+}
+
+#modalidad{
+  text-align:center;
+  width:186px;
+  height:25px;
+  margin-top:3px;
+  text-align: left;
+}
+
+#codigo{
+  text-align:center;
+  width:183px;
+  height:19px;
+  margin-top:3px;
+  text-align: left;
+}
+
+#monto{
+  text-align:center;
+  width:183px;
+  height:19px;
+  margin-top:3px;
+  text-align: left;
+}
+
 #numCard{
   text-align:center;
   width:180px;
   height:19px;
-  box-shadow:!important;
 }
 
 #vencimiento{
   text-align:center;
   width:90px;
   height:19px;
-  box-shadow:!important;
-  -webkit-appearance: none;
-  -webkit-writing-mode: horizontal-tb !important;
 }
 
 #mes{
   text-align:center;
   width:45px;
   height:25px;
-  box-shadow:!important;
 }
 
 #año{
   text-align:center;
   width:45px;
   height:25px;
-  box-shadow:!important;
 }
 
 #seguridad{
   text-align:center;
   width:90px;
   height:19px;
-  box-shadow:!important;
 }
 
 #nameTitular{
@@ -75,7 +121,6 @@ body{
   width:188px;
   height:19px;
   margin-top:3px;
-  box-shadow:!important;
   text-align: left;
 }
 
@@ -84,7 +129,6 @@ body{
   width:188px;
   height:19px;
   margin-top:3px;
-  box-shadow:!important;
   text-align: left;
 }
 
@@ -93,8 +137,20 @@ body{
   width:188px;
   height:19px;
   margin-top:3px;
-  box-shadow:!important;
   text-align: left;
+}
+
+#btnSiguiente{
+  background:#fb9804;
+  border-radius:1000px;
+  box-shadow:0 1px #444444;
+  width:140px;
+  height:40px;
+  color:#ffffff;
+  display:inline-block;
+  font:normal bold 24px/30px "Calibri", sans-serif;
+  text-align:center;
+  text-shadow:1px 1px #000000;
 }
 
 #btnValidarCard{
@@ -125,6 +181,32 @@ text-shadow:1px 1px #000000;
 
 #btnPagar{
   background:#bfe330;
+  border-radius:1000px;
+  box-shadow:0 1px #444444;
+  width:140px;
+  height:40px;
+  color:#ffffff;
+  display:inline-block;
+  font:normal bold 24px/30px "Calibri", sans-serif;
+  text-align:center;
+  text-shadow:1px 1px #000000;
+}
+
+#btnRegresar2{
+background:#2d98d6;
+border-radius:1000px;
+box-shadow:0 1px #444444;
+width:140px;
+height:40px;
+color:#ffffff;
+display:inline-block;
+font:normal bold 24px/30px "Calibri", sans-serif;
+text-align:center;
+text-shadow:1px 1px #000000;
+}
+
+#btnFinalizar{
+  background:#c27ba0;
   border-radius:1000px;
   box-shadow:0 1px #444444;
   width:140px;

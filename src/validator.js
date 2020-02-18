@@ -1,3 +1,45 @@
+// Declarando variable para llamar al boton de Siguiente y que este vaya a la 2da vista
+
+const nextPage = document.getElementById("btnSiguiente");
+nextPage.addEventListener("click", function () {
+
+document.getElementById('vista1').classList.add("ocultar");
+document.getElementById('vista2').classList.remove("ocultar");
+
+});
+
+const returnPage = document.getElementById("btnRegresar");
+returnPage.addEventListener("click", function () {
+
+document.getElementById('vista2').classList.add("ocultar");
+document.getElementById('vista1').classList.remove("ocultar");
+
+});
+
+const pagar = document.getElementById("btnPagar");
+pagar.addEventListener("click", function () {
+
+document.getElementById('vista3').classList.add("ocultar");
+document.getElementById('vista4').classList.remove("ocultar");
+
+});
+
+const returnValidatorPage = document.getElementById("btnRegresar2");
+returnValidatorPage.addEventListener("click", function () {
+
+document.getElementById('vista3').classList.add("ocultar");
+document.getElementById('vista2').classList.remove("ocultar");
+
+});
+
+const finalizarSesion = document.getElementById("btnFinalizar");
+finalizarSesion.addEventListener("click", function () {
+
+document.getElementById('vista4').classList.add("ocultar");
+document.getElementById('vista1').classList.remove("ocultar");
+
+});
+
 // Declarando variable para llamar al boton de validar tarjeta.
 
 const validator = document.getElementById("btnValidarCard");
@@ -126,11 +168,12 @@ validator.addEventListener( "click" , function () {
      if(sumatoriaTotal[i]%10 == 0){
        alert(" Tarjeta Verificada  ✅ ");
 
-       document.getElementById('vista1').classList.add("ocultar");
-       document.getElementById('vista2').classList.remove("ocultar");
+       document.getElementById('vista2').classList.add("ocultar");
+       document.getElementById('vista3').classList.remove("ocultar");
 
      } else {
        alert(" ❌ Tarjeta NO Verificada ⚠️ ");
+
      }
 
 
