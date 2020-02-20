@@ -17,7 +17,7 @@ let numCard = document.getElementById('numCard');
 
 const check = document.getElementById("btnValidarCard");
 check.addEventListener( "click" , () => {
-  let x = validator.isvalid(numCard.value);
+  let x = validator.isValid(numCard.value);
   if (x == true) {
     alert(" Tarjeta Verificada  ✅ ");
     let hiddenCard = validator.maskify(numCard.value);
