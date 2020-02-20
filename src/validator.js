@@ -6,7 +6,7 @@ const validator = {
 // Separando los numeros de las posiciones Pares e Inpares.
   const parNumber = [];
   const inparNumber = [];
-  for (var i = 0; i < reverseNumber.length; i=i+1){
+  for (let i = 0; i < reverseNumber.length; i=i+1){
     if (i%2==1) {
       parNumber.push(parseInt(reverseNumber[i]*2)); // multiplicando por 2 a los numeros de las posiciones Inpares -> Originalmente son Pares
     }else {
@@ -15,14 +15,14 @@ const validator = {
   }
 
   const parNumberTwoDigit = [];
-  for (var i = 0; i < parNumber.length; i++) {
+  for (let i = 0; i < parNumber.length; i++) {
     if(parNumber[i]>=10){
       parNumberTwoDigit.push(parNumber[i]);
     }
   }
 
   const parNumberOneDigit = [];
-  for (var i = 0; i < parNumber.length; i++) {
+  for (let i = 0; i < parNumber.length; i++) {
     if(parNumber[i]<=9){
       parNumberOneDigit.push(parNumber[i]);
     }
@@ -45,7 +45,7 @@ const validator = {
 
   let changeOneDigit = parNumberTwoDigit.join("").split("");
   const changeArrayNumber = [];
-  for (var i = 0; i < changeOneDigit.length; i=i+1){
+  for (let i = 0; i < changeOneDigit.length; i=i+1){
     if (i<=16) {
       changeArrayNumber.push(parseInt(changeOneDigit[i]));
     }
@@ -85,11 +85,11 @@ const validator = {
 maskify:(numCard) => {
   let d = numCard.split("");
   for (let i = 0; i < d.length -4; i++) {
-    d[i] = '🐱';
+    d[i] = '#';
   }
     return d.join("");
   }
-  
+
 };
 
 export default validator;

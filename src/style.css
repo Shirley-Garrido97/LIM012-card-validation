@@ -1,15 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:"Calibri", sans-serif;
+  color: #212524 ;
+  font-size: 15px;
+
+}
+
 body{
-  margin-top: 0px;
-  margin-left:0px;
-  margin-right:0px;
-  margin-bottom:0px;
-  padding:0px;
   background-image:url(IMG/fondo5.png);
-  background-size: cover;
+  background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment:fixed;
-  font-family:"Calibri", sans-serif;
+  height: 100vh;
 }
 
 .ocultar {
@@ -17,79 +21,76 @@ body{
 }
 
 .fieldset{
-  width:250px;
-  height:350px;
-  margin-top:0px;
-  margin-left:center;
-  margin-right:center;
-  margin-bottom:0px;
+  width: 40vh;
+  height: 50vh;
+  text-align: center;
+  border-radius:30px 0px;
+  border-style: solid;
+  border-color:#9A7889;
   padding:25px;
 }
 
 .footer{
-  margin-top:20px;
-  margin-left:center;
-  margin-right:center;
-  margin-bottom:0px;
+  text-align: center;
+  padding: 22px;
 }
 
 
 .egresada{
   width:70px;
   height:80px;
-  margin-top:0px;
-  margin-left:center;
-  margin-right:center;
+  text-align: center;
   margin-bottom:10px;
-  margin-top:0px;
 }
 
 .alumna{
   width:70px;
   height:80px;
-  margin-top:0px;
-  margin-left:center;
-  margin-right:center;
+  text-align: center;
   margin-bottom:10px;
-  margin-top:0px;
 }
 
-#core{
-  text-align:center;
-  width:186px;
-  height:25px;
-  margin-top:3px;
-  text-align: left;
-}
+#tarjetaOculta{
+  font-family:"Calibri", sans-serif;
+  font-size: 19px;
+  color:#e92357;
 
-#modalidad{
-  text-align:center;
-  width:186px;
-  height:25px;
-  margin-top:3px;
-  text-align: left;
 }
 
 #codigo{
-  text-align:center;
-  width:183px;
-  height:19px;
+
+  width:182px;
+  height:21px;
   margin-top:3px;
-  text-align: left;
+  text-align:center;
+}
+
+#core{
+  width:186px;
+  height:25px;
+  margin-top:3px;
+  text-align:center;
+}
+
+#modalidad{
+  width:186px;
+  height:25px;
+  margin-top:3px;
+  text-align:center;
+
 }
 
 #monto{
-  text-align:center;
-  width:183px;
-  height:19px;
+  width:186px;
+  height:25px;
   margin-top:3px;
-  text-align: left;
+  text-align:center;
 }
 
 #numCard{
   text-align:center;
-  width:180px;
-  height:19px;
+  width:190px;
+  height:24px;
 }
 
 #vencimiento{
@@ -102,42 +103,36 @@ body{
   text-align:center;
   width:45px;
   height:25px;
+  margin-top:-10px;
 }
 
 #año{
   text-align:center;
   width:45px;
   height:25px;
+  margin-top:-10px;
 }
 
 #seguridad{
   text-align:center;
   width:90px;
-  height:19px;
+  height:21px;
+  margin-top:-10px;
 }
 
 #nameTitular{
   text-align:center;
+  font-size: 13px;
   width:188px;
-  height:19px;
+  height:21px;
   margin-top:3px;
-  text-align: left;
-}
-
-#lastnameTitular{
-  text-align:center;
-  width:188px;
-  height:19px;
-  margin-top:3px;
-  text-align: left;
 }
 
 #email{
   text-align:center;
   width:188px;
-  height:19px;
+  height:21px;
   margin-top:3px;
-  text-align: left;
 }
 
 #btnSiguiente{
@@ -232,9 +227,9 @@ text-shadow:1px 1px #000000;
 }
 
 .avatar{
+  text-align:center;
   width:150px;
   height:110px;
-  margin-top:0px;
 }
 
 .logoProject{

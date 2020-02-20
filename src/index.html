@@ -6,23 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img class="logoProject"src="IMG/logo-project.png"></img>
+    <header class="encabezado">
+      <img class="logoProject" src="IMG/logo-project.png">
     </header>
     <main>
 <!-- Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar -->
       <div id="vista1">
         <form action="" method="get">
           <center>
-            <img class="procesos"src="IMG/proceso1.png"></img>
+            <img class="procesos" src="IMG/proceso1.png">
 
             <fieldset class="fieldset">
-              <img class="egresada"src="IMG/egresada.png"></img>
-              <img class="alumna"src="IMG/alumna.png"></img>
+              <img class="egresada" src="IMG/egresada.png">
+              <img class="alumna" src="IMG/alumna.png">
               <legend><strong> DATOS DE PAGO</strong></legend>
+              <strong>
+              <label for="Codigo"> Código:</label>
+              <input type="text" id="codigo" minlength="9" maxlength="9" pattern="[0-9]+" placeholder="🕵🏻    Ejemplo: A70293549      " required >
 
               <br>
-              <strong>
               <label for="core"> C.Core:</label>
               <select id="core">
                 <option>📍 Lima 06 </option>
@@ -42,13 +44,14 @@
               </select>
 
               <br>
-              <label for="Codigo"> Código:</label>
-              <input type="text" id = "codigo" minlength="9" maxlength="9" pattern="[azAZ]" pattern="[0-9]+" placeholder=" 🕵🏻‍ Ingresar aquí Código " required >
-
-              <br>
               <label for="monto"> Monto:</label>
-              <input type="text" id = "monto" minlength="5" maxlength="14000"  pattern="[0-9]+" placeholder=" 💸 Ingresar Monto a Pagar " required >
-
+              <select id="monto">
+                <option> 💸 S/ 30.00 </option>
+                <option> 💸 S/ 60.00 </option>
+                <option> 💸 S/ 80.00 </option>
+                <option> 💸 S/ 590.00 </option>
+                <option> 💸 S/ 920.00 </option>
+              </select>
               </strong>
               <br>
               <br>
@@ -57,27 +60,28 @@
             </fieldset>
           </center>
         </form>
-      </div>
+     </div>
 
 <!-- Creando formulario para validador de tarjetas -->
 
-      <div id="vista2">
-        <form action="" method="get">
+     <div id="vista2" class="ocultar">
+       <form action="" method="get">
           <center>
-            <img class="procesos"src="IMG/proceso2.png"></img>
+            <img class="procesos" src="IMG/proceso2.png">
             <label>
             <fieldset class="fieldset">
-              <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
+              <img class="franquisiasCard" src="IMG/franquisias_card.png">
               <legend><strong>VALIDADOR DE TARJETA</strong></legend>
               <br>
-              <input type="text" id = "numCard" minlength="13" maxlength="16" pattern="!=[azAZ]" pattern="[0-9]+" placeholder=" 💳 Ingresar N° de Tarjeta " required >
+              <input type="text" id = "numCard" minlength="11" maxlength="16"  pattern="[0-9]+" placeholder=" 💳 Ingresar N° de Tarjeta " required >
               <br>
               <br>
               <button type="button" id="btnValidarCard">Validar</button>
               <br>
               <br>
               <button type="button" id="btnRegresar">Regresar</button>
-              <center><img class="avatar"src="IMG/verificando.gif"></img></center>
+              <br>
+              <center><img class="avatar" src="IMG/candado2.gif"></center>
             </fieldset>
           </label>
         </center>
@@ -89,11 +93,12 @@
     <div id="vista3" class="ocultar">
       <form action="" method="get">
         <center>
-          <img class="procesos"src="IMG/proceso3.png"></img>
+          <img class="procesos" src="IMG/proceso3.png">
           <label>
             <fieldset class="fieldset">
-              <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
+              <img class="franquisiasCard" src="IMG/franquisias_card.png">
               <legend><strong> PAGA RÁPIDO CON PAGENTO </strong></legend>
+              <strong><p align = "center" id="tarjetaOculta"></p></strong>
               <br>
               <select id="mes">
               <option>01</option>
@@ -123,22 +128,17 @@
               <option>24</option>
               <option>25</option>
               </select>
-
-              <br>
               <input type="text" id = "seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV " required="" >
 
               <br>
-              <input type="text" id = "nameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Nombre del Titular " required="" >
+              <input type="text" id = "nameTitular" minlength="3" maxlength="100" pattern="[a-zA-Z]" placeholder=" 👥 Nombre y Apellido del Titular" required="" >
 
               <br>
-              <input type="text" id = "lastnameTitular" minlength="3" maxlength="50" pattern="[a-zA-Z]" placeholder=" 👥 Apellido del Titular " required="" >
-
+              <input type="email" id = "email" placeholder=" 📧   Ejem: shir@outlook.com   " required="" >
               <br>
-              <input type="email" id = "email" placeholder=" 📧 Email " required="" >
-
               <br>
               <button type="button" id="btnPagar">Pagar</button>
-
+              <br>
               <br>
               <button type="button" id="btnRegresar2">Regresar</button>
             </fieldset>
@@ -152,23 +152,25 @@
     <div id="vista4" class="ocultar">
       <form action="" method="get">
         <center>
-          <img class="procesos"src="IMG/proceso4.png"></img>
+          <img class="procesos" src="IMG/proceso4.png">
           <label>
             <fieldset class="fieldset">
-              <img class="franquisiasCard"src="IMG/franquisias_card.png"></img>
-              <legend><strong> RESUMEN DE PAGO </strong></legend>
-
-                            <!--Informacion de pago
-                            Laboratoria S.A.C - RUC 8947397473
-                            💳 numero de tarjeta con ####
-                            👥 Nombre del Titular
-                            💻 Alumna
-                            🎓 Egresada
-                           🕵🏻‍ Ingresar aquí Código
-                           💻 Alumna
-                           🎓 Egresada
-                           💸 Monto Pagado -->
-
+              <legend><strong>RESUMEN DE PAGO </strong></legend>
+              <strong>
+              <p> Laboratoria S.A.C </p>
+              <p>  RUC 20566216281 </p>
+              <br>
+              <strong><p align = "center" id="comprobanteTarjeta"></p></strong>
+              <strong><p align = "center" id="comprobanteTitular"></p></strong>
+              <br>
+              <strong><p align = "center" id="comprobanteCodigo"></p></strong>
+              <strong><p align = "center" id="comprobanteModalidad"></p></strong>
+              <strong><p align = "center" id="comprobanteCore"></p></strong>
+              <strong><p align = "center" id="comprobanteMonto"></p></strong>
+              <br>
+              <strong><p align = "center" id="comprobanteEmail"></p></strong>
+              </strong>
+              <br>
               <button type="button" id="btnFinalizar">Finalizar</button>
             </fieldset>
           </label>
@@ -177,10 +179,7 @@
     </div>
  </main>
  <footer class="footer">
-   <br>
-   <center><strong>
-     © Copyright by Shirley Garrido Navarro - 2020
-   </center></strong>
+   <strong>© Copyright by Shirley Garrido Navarro - 2020</strong>
  </footer>
  <script src="index.js" type="module"></script>
 </body>
