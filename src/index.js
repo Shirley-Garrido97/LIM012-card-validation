@@ -13,9 +13,10 @@ document.getElementById('vista2').classList.remove("ocultar");
 // Declarando variable para llamar al boton de Validar y si es true la validacion que vaya a la vista 3 de lo contrario siga en vista 2
 // Y que si es una Tarjeta Validada  que me devuelva los numeros de la tarjeta original con # y los 4 ultimos digitos normal
 
+let numCard = document.getElementById('numCard');
+
 const check = document.getElementById("btnValidarCard");
 check.addEventListener( "click" , () => {
-  let numCard = document.getElementById('numCard');
   let x = validator.isvalid(numCard.value);
   if (x == true) {
     alert(" Tarjeta Verificada  ✅ ");
@@ -44,8 +45,7 @@ document.getElementById('vista1').classList.remove("ocultar");
 const pagar = document.getElementById("btnPagar");
 pagar.addEventListener("click", () => {
 
-let card = document.getElementById('numCard');
-let card1 = validator.maskify(numCard.value);
+let cardValue1 = validator.maskify(numCard.value);
 let titu = document.getElementById('nameTitular').value;
 let code = document.getElementById('codigo').value;
 let mod = document.getElementById('modalidad');
@@ -57,7 +57,7 @@ let money1 = money.options[money.selectedIndex].text;
 let mail = document.getElementById('email').value;
 
 
-document.getElementById('comprobanteTarjeta').innerHTML = " Tarjeta N° " + card1;
+document.getElementById('comprobanteTarjeta').innerHTML = " Tarjeta N° " + cardValue1;
 document.getElementById('comprobanteTitular').innerHTML = " Titular  : " + titu;
 document.getElementById('comprobanteCodigo').innerHTML = " Código   : " + code;
 document.getElementById('comprobanteModalidad').innerHTML = " Modalidad : " + mod1;

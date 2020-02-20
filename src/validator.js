@@ -1,8 +1,8 @@
 const validator = {
-  isvalid : (numCard)=> {
+  isValid : (numCard)=> {
 
   let reverseNumber = numCard.split("").reverse();
-  console.log(reverseNumber); // mostrar en consola, los numeros ingresados en orden inverso
+
 // Separando los numeros de las posiciones Pares e Inpares.
   const parNumber = [];
   const inparNumber = [];
