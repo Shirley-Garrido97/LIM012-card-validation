@@ -1,106 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
+
     <header class="encabezado">
-      <img class="logoProject" src="IMG/logo-project.png">
+        <img id="logoLab" class="logoLab" src="IMG/logoLabBlack.png">
+        <nav class="cjaNavegacion">
+            <ul class="listaElemtos">
+                <li class="elemtosNav"><a href="#">Conócenos</a></li>
+                <li class="elemtosNav"><a href="#">Egresadas</a></li>
+                <li class="elemtosNav"><a href="#">Tracks</a></li>
+                <li class="elemtosNav"><a href="#">Metodologia</a></li>
+                <li class="elemtosNav"><a href="#">Etapas</a></li>
+                <li class="elemtosNav"><a href="#">Empresas</a></li>
+                <li class="elemtosNav"><a href="#">Prensa</a></li>
+                <li class="elemtosNav"><a id="login" href="#">Login</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-<!-- Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar -->
-      <div id="vista1">
-        <form action="" method="get">
-          <center>
-            <img class="procesos" src="IMG/proceso1.png">
 
-            <fieldset class="fieldset">
-              <img class="egresada" src="IMG/egresada.png">
-              <img class="alumna" src="IMG/alumna.png">
-              <legend><strong> DATOS DE PAGO</strong></legend>
-              <strong>
-              <label for="Codigo"> Código:</label>
-              <input type="text" id="codigo" minlength="9" maxlength="9" pattern="[0-9]+" placeholder="🕵🏻    Ejemplo: A70293549      " required >
+    <main class="main">
+        <div id="vistaAdicional">
+            <div class="conteinerSlider">
+                <ul class="listaImg">
+                    <li class="elementosSlider"><img class="banners" src="IMG/4.png"></li>
+                    <li class="elementosSlider"><img class="banners" src="IMG/6.png"></li>
+                    <li class="elementosSlider"><img class="banners" src="IMG/5.png"></li>
+                </ul>
+            </div>
+            <div class="video">
+                <img id="estadistica" src="IMG/estadistica.png">
+                <iframe width="561" height="504" src="https://www.youtube.com/embed/aO_0S7IUkeg?start=2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 
-              <br>
-              <label for="core"> C.Core:</label>
-              <select id="core">
-                <option>📍 Lima 06 </option>
-                <option>📍 Lima 07 </option>
-                <option>📍 Lima 08 </option>
-                <option>📍 Lima 09 </option>
-                <option>📍 Lima 10 </option>
-                <option>📍 Lima 11 </option>
-                <option>📍 Lima 12 </option>
-              </select>
+        <!-- Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar -->
 
-              <br>
-              <label for="modalidad"> Estado: </label>
-              <select id="modalidad">
-                <option> 💻 Alumna</option>
-                <option> 🎓 Egresada</option>
-              </select>
+        <div id="vista1" class="ocultar">
+            <form action="" method="get">
+                <img class="procesos" src="IMG/procesos1.png">
+                <fieldset class="fieldset">
+                    <img class="egresada" src="IMG/egresada.png">
+                    <img class="alumna" src="IMG/alumna.png">
+                    <legend><strong> DATOS DE PAGO </strong></legend>
+                    <strong>
+            <label for="Codigo"> Código:</label>
+            <input type="text" id="codigo" minlength="9" maxlength="9" pattern="[0-9]+"
+              placeholder="🕵🏻    Ejemplo:  70293549      " required>
 
-              <br>
-              <label for="monto"> Monto:</label>
-              <select id="monto">
-                <option> 💸 S/ 30.00 </option>
-                <option> 💸 S/ 60.00 </option>
-                <option> 💸 S/ 80.00 </option>
-                <option> 💸 S/ 590.00 </option>
-                <option> 💸 S/ 920.00 </option>
-              </select>
-              </strong>
-              <br>
-              <br>
-              <button type="button" id="btnSiguiente">Siguiente</button>
+            <br>
+            <label for="core"> C.Core:</label>
+            <select id="core">
+              <option>📍 Lima 06 </option>
+              <option>📍 Lima 07 </option>
+              <option>📍 Lima 08 </option>
+              <option>📍 Lima 09 </option>
+              <option>📍 Lima 10 </option>
+              <option>📍 Lima 11 </option>
+              <option>📍 Lima 12 </option>
+            </select>
 
-            </fieldset>
-          </center>
-        </form>
-     </div>
+            <br>
+            <label for="modalidad"> Estado: </label>
+            <select id="modalidad">
+              <option> 💻 Alumna</option>
+              <option> 🎓 Egresada</option>
+            </select>
 
-<!-- Creando formulario para validador de tarjetas -->
+            <br>
+            <label for="monto"> Monto:</label>
+            <select id="monto">
+              <option> 💸 S/ 30.00 </option>
+              <option> 💸 S/ 60.00 </option>
+              <option> 💸 S/ 80.00 </option>
+              <option> 💸 S/ 590.00 </option>
+              <option> 💸 S/ 920.00 </option>
+            </select>
+          </strong>
+                    <br>
+                    <br>
+                    <button type="button" id="btnSiguiente">Siguiente</button>
 
-     <div id="vista2" class="ocultar">
-       <form action="" method="get">
-          <center>
-            <img class="procesos" src="IMG/proceso2.png">
-            <label>
-            <fieldset class="fieldset">
-              <img class="franquisiasCard" src="IMG/franquisias_card.png">
-              <legend><strong>VALIDADOR DE TARJETA</strong></legend>
-              <br>
-              <input type="text" id = "numCard" minlength="11" maxlength="16"  pattern="[0-9]+" placeholder=" 💳 Ingresar N° de Tarjeta " required >
-              <br>
-              <br>
-              <button type="button" id="btnValidarCard">Validar</button>
-              <br>
-              <br>
-              <button type="button" id="btnRegresar">Regresar</button>
-              <br>
-              <center><img class="avatar" src="IMG/candado2.gif"></center>
-            </fieldset>
-          </label>
-        </center>
-      </form>
-    </div>
+                </fieldset>
+            </form>
+        </div>
 
-<!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
+        <!-- Creando formulario para validador de tarjetas -->
 
-    <div id="vista3" class="ocultar">
-      <form action="" method="get">
-        <center>
-          <img class="procesos" src="IMG/proceso3.png">
-          <label>
-            <fieldset class="fieldset">
-              <img class="franquisiasCard" src="IMG/franquisias_card.png">
-              <legend><strong> PAGA RÁPIDO CON PAGENTO </strong></legend>
-              <strong><p align = "center" id="tarjetaOculta"></p></strong>
-              <br>
-              <select id="mes">
+        <div id="vista2" class="ocultar">
+            <form action="" method="get">
+                <img class="procesos" src="IMG/procesos2.png">
+                <label>
+          <fieldset class="fieldset">
+            <img class="franquisiasCard" src="IMG/franquisias_card.png">
+            <legend><strong>VALIDADOR DE TARJETA</strong></legend>
+            <br>
+            <input type="text" id="numCard" minlength="11" maxlength="16" pattern="[0-9]+"
+              placeholder=" 💳 Ingresar N° de Tarjeta " required>
+            <br>
+            <br>
+            <button type="button" id="btnValidarCard">Validar</button>
+            <br>
+            <br>
+            <button type="button" id="btnRegresar">Regresar</button>
+            <br>
+            <img class="avatar" src="IMG/candado2.gif">
+          </fieldset>
+        </label>
+            </form>
+        </div>
+
+        <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
+
+        <div id="vista3" class="ocultar">
+            <form action="" method="get">
+
+                <img class="procesos" src="IMG/procesos3.png">
+                <label>
+          <fieldset class="fieldset">
+            <img class="franquisiasCard" src="IMG/franquisias_card.png">
+            <legend><strong> PAGA RÁPIDO CON PAGENTO </strong></legend>
+            <strong>
+              <p id="tarjetaOculta"></p>
+            </strong>
+            <br>
+            <select id="mes">
               <option>01</option>
               <option>02</option>
               <option>03</option>
@@ -113,9 +143,9 @@
               <option>10</option>
               <option>11</option>
               <option>12</option>
-              </select>
+            </select>
 
-              <select id="año">
+            <select id="año">
               <option>15</option>
               <option>16</option>
               <option>17</option>
@@ -127,60 +157,98 @@
               <option>23</option>
               <option>24</option>
               <option>25</option>
-              </select>
-              <input type="text" id = "seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV " required="" >
+            </select>
+            <input type="text" id="seguridad" minlength="3" maxlength="3" pattern="[0-9]+" placeholder=" 💳 CVV "
+              required="">
 
-              <br>
-              <input type="text" id = "nameTitular" minlength="3" maxlength="100" pattern="[a-zA-Z]" placeholder=" 👥 Nombre y Apellido del Titular" required="" >
+            <br>
+            <input type="text" id="nameTitular" minlength="3" maxlength="100" pattern="[a-zA-Z]"
+              placeholder=" 👥 Nombre y Apellido del Titular" required="">
 
-              <br>
-              <input type="email" id = "email" placeholder=" 📧   Ejem: shir@outlook.com   " required="" >
-              <br>
-              <br>
-              <button type="button" id="btnPagar">Pagar</button>
-              <br>
-              <br>
-              <button type="button" id="btnRegresar2">Regresar</button>
-            </fieldset>
-          </label>
-        </center>
-      </form>
-    </div>
+            <br>
+            <input type="email" id="email" placeholder=" 📧   Ejem: shir@outlook.com   " required="">
+            <br>
+            <br>
+            <button type="button" id="btnPagar">Pagar</button>
+            <br>
+            <br>
+            <button type="button" id="btnRegresar2">Regresar</button>
+          </fieldset>
+        </label>
+            </form>
+        </div>
 
-<!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
+        <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
 
-    <div id="vista4" class="ocultar">
-      <form action="" method="get">
-        <center>
-          <img class="procesos" src="IMG/proceso4.png">
-          <label>
-            <fieldset class="fieldset">
-              <legend><strong>RESUMEN DE PAGO </strong></legend>
-              <strong>
+        <div id="vista4" class="ocultar">
+            <form action="" method="get">
+                <img class="procesos" src="IMG/procesos4.png">
+                <label>
+          <fieldset class="fieldset">
+            <legend><strong>RESUMEN DE PAGO </strong></legend>
+            <strong>
               <p> Laboratoria S.A.C </p>
-              <p>  RUC 20566216281 </p>
+              <p> RUC 20566216281 </p>
               <br>
-              <strong><p align = "center" id="comprobanteTarjeta"></p></strong>
-              <strong><p align = "center" id="comprobanteTitular"></p></strong>
-              <br>
-              <strong><p align = "center" id="comprobanteCodigo"></p></strong>
-              <strong><p align = "center" id="comprobanteModalidad"></p></strong>
-              <strong><p align = "center" id="comprobanteCore"></p></strong>
-              <strong><p align = "center" id="comprobanteMonto"></p></strong>
-              <br>
-              <strong><p align = "center" id="comprobanteEmail"></p></strong>
+              <strong>
+                <p class="comprobante" id="comprobanteTarjeta"></p>
+              </strong>
+              <strong>
+                <p class="comprobante" id="comprobanteTitular"></p>
               </strong>
               <br>
-              <button type="button" id="btnFinalizar">Finalizar</button>
-            </fieldset>
-          </label>
-        </center>
-      </form>
-    </div>
- </main>
- <footer class="footer">
-   <strong>© Copyright by Shirley Garrido Navarro - 2020</strong>
- </footer>
- <script src="index.js" type="module"></script>
+              <strong>
+                <p class="comprobante" id="comprobanteCodigo"></p>
+              </strong>
+              <strong>
+                <p class="comprobante" id="comprobanteModalidad"></p>
+              </strong>
+              <strong>
+                <p class="comprobante" id="comprobanteCore"></p>
+              </strong>
+              <strong>
+                <p class="comprobante" id="comprobanteMonto"></p>
+              </strong>
+              <br>
+              <strong>
+                <p class="comprobante" id="comprobanteEmail"></p>
+              </strong>
+            </strong>
+            <br>
+            <button type="button" id="btnFinalizar">Finalizar</button>
+          </fieldset>
+        </label>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="cjaFooter">
+            <img class="logoFooter" src="IMG/logoLabWhite.png" alt="">
+            <div class="footer1">
+                <p class="itemFooter">CONTÁCTENOS</p>
+                <P class="itemFooter">Contáctenos</P>
+                <p class="itemFooter">Blog</p>
+            </div>
+
+            <div class="footer2">
+                <p class="itemFooter">INVOLÚCRATE</p>
+                <P class="itemFooter">Postula al Bootcamp</P>
+                <p class="itemFooter">Contrata Talento</p>
+                <p class="itemFooter">Corporate Training</p>
+                <p class="itemFooter">Trabaja con Nosotros</p>
+            </div>
+
+            <strong>
+        <p class="piepag">© Copyright by Shirley Garrido Navarro - 2020</p>
+      </strong>
+        </div>
+    </footer>
+
+
+
+
+    <script src="index.js" type="module"></script>
 </body>
+
 </html>

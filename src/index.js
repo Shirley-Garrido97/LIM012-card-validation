@@ -1,12 +1,47 @@
 import validator from './validator.js';
 
+const btnLogin = document.getElementById("login");
+btnLogin.addEventListener("click", () => {
+  document.getElementById('vistaAdicional').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
+
+});
+
+const btnlogo = document.getElementById("logoLab");
+btnlogo.addEventListener("click", () => {
+  document.getElementById('vista1').classList.add("ocultar");
+  document.getElementById('vistaAdicional').classList.remove("ocultar");
+
+});
+
+const btnlogo2 = document.getElementById("logoLab");
+btnlogo2.addEventListener("click", () => {
+  document.getElementById('vista2').classList.add("ocultar");
+  document.getElementById('vistaAdicional').classList.remove("ocultar");
+
+});
+
+const btnlogo3 = document.getElementById("logoLab");
+btnlogo3.addEventListener("click", () => {
+  document.getElementById('vista3').classList.add("ocultar");
+  document.getElementById('vistaAdicional').classList.remove("ocultar");
+
+});
+
+const btnlogo4 = document.getElementById("logoLab");
+btnlogo4.addEventListener("click", () => {
+  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vistaAdicional').classList.remove("ocultar");
+
+});
+
 // Declarando variable para llamar al boton de Siguiente y que este vaya a la 2da vista
 
 const nextPage = document.getElementById("btnSiguiente");
 nextPage.addEventListener("click", () => {
 
-document.getElementById('vista1').classList.add("ocultar");
-document.getElementById('vista2').classList.remove("ocultar");
+  document.getElementById('vista1').classList.add("ocultar");
+  document.getElementById('vista2').classList.remove("ocultar");
 
 });
 
@@ -16,7 +51,7 @@ document.getElementById('vista2').classList.remove("ocultar");
 let numCard = document.getElementById('numCard');
 
 const check = document.getElementById("btnValidarCard");
-check.addEventListener( "click" , () => {
+check.addEventListener("click", () => {
   let x = validator.isValid(numCard.value);
   if (x == true) {
     alert(" Tarjeta Verificada  ✅ ");
@@ -35,8 +70,8 @@ check.addEventListener( "click" , () => {
 const returnPage = document.getElementById("btnRegresar");
 returnPage.addEventListener("click", () => {
 
-document.getElementById('vista2').classList.add("ocultar");
-document.getElementById('vista1').classList.remove("ocultar");
+  document.getElementById('vista2').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
 
@@ -45,30 +80,30 @@ document.getElementById('vista1').classList.remove("ocultar");
 const pagar = document.getElementById("btnPagar");
 pagar.addEventListener("click", () => {
 
-let cardValue1 = validator.maskify(numCard.value);
-let titu = document.getElementById('nameTitular').value;
-let code = document.getElementById('codigo').value;
-let mod = document.getElementById('modalidad');
-let mod1 = mod.options[mod.selectedIndex].text;
-let cor = document.getElementById('core');
-let cor1 = cor.options[cor.selectedIndex].text;
-let money = document.getElementById('monto');
-let money1 = money.options[money.selectedIndex].text;
-let mail = document.getElementById('email').value;
+  let cardValue1 = validator.maskify(numCard.value);
+  let titu = document.getElementById('nameTitular').value;
+  let code = document.getElementById('codigo').value;
+  let mod = document.getElementById('modalidad');
+  let mod1 = mod.options[mod.selectedIndex].text;
+  let cor = document.getElementById('core');
+  let cor1 = cor.options[cor.selectedIndex].text;
+  let money = document.getElementById('monto');
+  let money1 = money.options[money.selectedIndex].text;
+  let mail = document.getElementById('email').value;
 
 
-document.getElementById('comprobanteTarjeta').innerHTML = " Tarjeta N° " + cardValue1;
-document.getElementById('comprobanteTitular').innerHTML = " Titular  : " + titu;
-document.getElementById('comprobanteCodigo').innerHTML = " Código   : " + code;
-document.getElementById('comprobanteModalidad').innerHTML = " Modalidad : " + mod1;
-document.getElementById('comprobanteCore').innerHTML = " Commo Core   : " + cor1;
-document.getElementById('comprobanteMonto').innerHTML = " Monto Pagado : " + money1;
-document.getElementById('comprobanteEmail').innerHTML = " Este comprobante será enviado a : " + mail;
+  document.getElementById('comprobanteTarjeta').innerHTML = " Tarjeta N° " + cardValue1;
+  document.getElementById('comprobanteTitular').innerHTML = " Titular  : " + titu;
+  document.getElementById('comprobanteCodigo').innerHTML = " Código   : " + code;
+  document.getElementById('comprobanteModalidad').innerHTML = " Modalidad : " + mod1;
+  document.getElementById('comprobanteCore').innerHTML = " Commo Core   : " + cor1;
+  document.getElementById('comprobanteMonto').innerHTML = " Monto Pagado : " + money1;
+  document.getElementById('comprobanteEmail').innerHTML = " Este comprobante será enviado a : " + mail;
 
 
 
-document.getElementById('vista3').classList.add("ocultar");
-document.getElementById('vista4').classList.remove("ocultar");
+  document.getElementById('vista3').classList.add("ocultar");
+  document.getElementById('vista4').classList.remove("ocultar");
 
 });
 
@@ -77,17 +112,19 @@ document.getElementById('vista4').classList.remove("ocultar");
 const returnValidatorPage = document.getElementById("btnRegresar2");
 returnValidatorPage.addEventListener("click", () => {
 
-document.getElementById('vista3').classList.add("ocultar");
-document.getElementById('vista2').classList.remove("ocultar");
+  document.getElementById('vista3').classList.add("ocultar");
+  document.getElementById('vista2').classList.remove("ocultar");
 
 });
 
 // Declarando variable para llamar al boton de Finalizar de la vista 4 , para que me lleve a la vista 1
 
 const finalizarSesion = document.getElementById("btnFinalizar");
-finalizarSesion.addEventListener("click",() => {
+finalizarSesion.addEventListener("click", () => {
 
-document.getElementById('vista4').classList.add("ocultar");
-document.getElementById('vista1').classList.remove("ocultar");
+  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
+
+
