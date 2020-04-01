@@ -2,36 +2,36 @@ import validator from './validator.js';
 
 const btnLogin = document.getElementById("login");
 btnLogin.addEventListener("click", () => {
-  document.getElementById('vistaAdicional').classList.add("ocultar");
-  document.getElementById('vista1').classList.remove("ocultar");
+  document.getElementById('vista1').classList.add("ocultar");
+  document.getElementById('vista2').classList.remove("ocultar");
 
 });
 
-const btnlogo = document.getElementById("logoLab");
-btnlogo.addEventListener("click", () => {
-  document.getElementById('vista1').classList.add("ocultar");
-  document.getElementById('vistaAdicional').classList.remove("ocultar");
+const btnlogo1 = document.getElementById("logoLab");
+btnlogo1.addEventListener("click", () => {
+  document.getElementById('vista2').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
 
 const btnlogo2 = document.getElementById("logoLab");
 btnlogo2.addEventListener("click", () => {
-  document.getElementById('vista2').classList.add("ocultar");
-  document.getElementById('vistaAdicional').classList.remove("ocultar");
+  document.getElementById('vista3').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
 
 const btnlogo3 = document.getElementById("logoLab");
 btnlogo3.addEventListener("click", () => {
-  document.getElementById('vista3').classList.add("ocultar");
-  document.getElementById('vistaAdicional').classList.remove("ocultar");
+  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
 
 const btnlogo4 = document.getElementById("logoLab");
 btnlogo4.addEventListener("click", () => {
-  document.getElementById('vista4').classList.add("ocultar");
-  document.getElementById('vistaAdicional').classList.remove("ocultar");
+  document.getElementById('vista5').classList.add("ocultar");
+  document.getElementById('vista1').classList.remove("ocultar");
 
 });
 
@@ -40,8 +40,8 @@ btnlogo4.addEventListener("click", () => {
 const nextPage = document.getElementById("btnSiguiente");
 nextPage.addEventListener("click", () => {
 
-  document.getElementById('vista1').classList.add("ocultar");
-  document.getElementById('vista2').classList.remove("ocultar");
+  document.getElementById('vista2').classList.add("ocultar");
+  document.getElementById('vista3').classList.remove("ocultar");
 
 });
 
@@ -57,8 +57,8 @@ check.addEventListener("click", () => {
     alert(" Tarjeta Verificada  ✅ ");
     let hiddenCard = validator.maskify(numCard.value);
     document.getElementById('tarjetaOculta').innerHTML = " Tarjeta N° " + hiddenCard;
-    document.getElementById('vista2').classList.add("ocultar");
-    document.getElementById('vista3').classList.remove("ocultar");
+    document.getElementById('vista3').classList.add("ocultar");
+    document.getElementById('vista4').classList.remove("ocultar");
   } else {
     alert(" ❌ Tarjeta NO Verificada ⚠️ ");
   }
@@ -70,8 +70,8 @@ check.addEventListener("click", () => {
 const returnPage = document.getElementById("btnRegresar");
 returnPage.addEventListener("click", () => {
 
-  document.getElementById('vista2').classList.add("ocultar");
-  document.getElementById('vista1').classList.remove("ocultar");
+  document.getElementById('vista3').classList.add("ocultar");
+  document.getElementById('vista2').classList.remove("ocultar");
 
 });
 
@@ -102,8 +102,8 @@ pagar.addEventListener("click", () => {
 
 
 
-  document.getElementById('vista3').classList.add("ocultar");
-  document.getElementById('vista4').classList.remove("ocultar");
+  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vista5').classList.remove("ocultar");
 
 });
 
@@ -112,8 +112,8 @@ pagar.addEventListener("click", () => {
 const returnValidatorPage = document.getElementById("btnRegresar2");
 returnValidatorPage.addEventListener("click", () => {
 
-  document.getElementById('vista3').classList.add("ocultar");
-  document.getElementById('vista2').classList.remove("ocultar");
+  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vista3').classList.remove("ocultar");
 
 });
 
@@ -122,7 +122,7 @@ returnValidatorPage.addEventListener("click", () => {
 const finalizarSesion = document.getElementById("btnFinalizar");
 finalizarSesion.addEventListener("click", () => {
 
-  document.getElementById('vista4').classList.add("ocultar");
+  document.getElementById('vista5').classList.add("ocultar");
   document.getElementById('vista1').classList.remove("ocultar");
 
 });

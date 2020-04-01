@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="IMG/egresada.png" type="image/x-icon" />
 </head>
 
 <body>
-
-    <header class="encabezado">
-        <img id="logoLab" class="logoLab" src="IMG/logoLabBlack.png">
-        <nav class="cjaNavegacion">
-            <ul class="listaElemtos">
-                <li class="elemtosNav"><a href="#">Conócenos</a></li>
-                <li class="elemtosNav"><a href="#">Egresadas</a></li>
-                <li class="elemtosNav"><a href="#">Tracks</a></li>
-                <li class="elemtosNav"><a href="#">Metodologia</a></li>
-                <li class="elemtosNav"><a href="#">Etapas</a></li>
-                <li class="elemtosNav"><a href="#">Empresas</a></li>
-                <li class="elemtosNav"><a href="#">Prensa</a></li>
-                <li class="elemtosNav"><a id="login" href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <div id="vistaAdicional">
-            <div class="conteinerSlider">
-                <ul class="listaImg">
-                    <li class="elementosSlider"><img class="banners" src="IMG/4.png"></li>
-                    <li class="elementosSlider"><img class="banners" src="IMG/6.png"></li>
-                    <li class="elementosSlider"><img class="banners" src="IMG/5.png"></li>
-                </ul>
-            </div>
-            <div class="video">
-                <img id="estadistica" src="IMG/estadistica.png">
-                <iframe width="561" height="504" src="https://www.youtube.com/embed/aO_0S7IUkeg?start=2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+  <header>
+    <div class="containerLogo">
+      <img id="logoLab" class="logoLab" src="IMG/logoLabBlack.png">
+    </div>
+    <div class="containerNav">
+      <nav class="cjaNavegacion">
+        <ul class="listaElemtos">
+          <li class="elemtosNav"><a href="#"> Conócenos </a></li>
+          <li class="elemtosNav"><a href="#"> Egresadas </a></li>
+          <li class="elemtosNav"><a href="#"> Tracks </a></li>
+          <li class="elemtosNav"><a href="#"> Metodologia </a></li>
+          <li class="elemtosNav"><a href="#"> Etapas </a></li>
+          <li class="elemtosNav"><a href="#"> Empresas </a></li>
+          <li class="elemtosNav"><a href="#"> Prensa </a></li>
+          <li class="elemtosNav"><a id="login" href="#"> Login </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="vista1">
+      <div class="slider">
+        <div class="conteinerSlider">
+          <ul class="listaImg">
+            <li class="elementosSlider"><img class="banners" src="IMG/4.png"></li>
+            <li class="elementosSlider"><img class="banners" src="IMG/6.png"></li>
+            <li class="elementosSlider"><img class="banners" src="IMG/5.png"></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar -->
-
-        <div id="vista1" class="ocultar">
-            <form action="" method="get">
-                <img class="procesos" src="IMG/procesos1.png">
-                <fieldset class="fieldset">
-                    <img class="egresada" src="IMG/egresada.png">
-                    <img class="alumna" src="IMG/alumna.png">
-                    <legend><strong> DATOS DE PAGO </strong></legend>
-                    <strong>
+      <div class="row">
+        <div class="column">
+          <div class="caja1">
+            <h1>💡¿Que es Laboratoria?</h1>
+            <article>
+              Laboratoria, es una organización sin fines de lucro centrada en formar a jóvenes mujeres de bajos recursos
+              como programadoras y expertas en desarrollo web, con el objetivo de impulsar su inserción laboral en el
+              sector digital.<br>
+              <br>Contamos con presencia en 4 paises y 5 sedes en :</br>
+              <strong>
+                <br> 🚩 Lima 
+                <br> 🚩 Santiago de Chile
+                <br> 🚩 Ciudad de México 
+                <br> 🚩 Guadalajara
+                <br> 🚩 São Paulo
+              </strong>
+            </article>
+          </div>
+          <div class="caja2">
+            <video width="675px" controls>
+              <source src="IMG/5añosLab.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="trayectoria"></div>
+      <br>
+    </section>
+    <!--Creando formulario para ingresar datos de la estudiante ó egresada con su respectiva pensión a Pagar-->
+    <section id="vista2" class="ocultar">
+      <form action="" method="get">
+        <img class="procesos" src="IMG/procesos1.png">
+        <fieldset class="fieldset">
+          <img class="egresada" src="IMG/egresada.png">
+          <img class="alumna" src="IMG/alumna.png">
+          <legend><strong> DATOS DE PAGO </strong></legend>
+          <strong>
+            <br>
             <label for="Codigo"> Código:</label>
             <input type="text" id="codigo" minlength="9" maxlength="9" pattern="[0-9]+"
               placeholder="🕵🏻    Ejemplo:  70293549      " required>
@@ -83,26 +110,25 @@
               <option> 💸 S/ 920.00 </option>
             </select>
           </strong>
-                    <br>
-                    <br>
-                    <button type="button" id="btnSiguiente">Siguiente</button>
-
-                </fieldset>
-            </form>
-        </div>
-
-        <!-- Creando formulario para validador de tarjetas -->
-
-        <div id="vista2" class="ocultar">
-            <form action="" method="get">
-                <img class="procesos" src="IMG/procesos2.png">
-                <label>
+          <br>
+          <br>
+          <br>
+          <button type="button" id="btnSiguiente">Siguiente</button>
+        </fieldset>
+      </form>
+    </section>
+    <!-- Creando formulario para validador de tarjetas -->
+    <section id="vista3" class="ocultar">
+      <form action="" method="get">
+        <img class="procesos" src="IMG/procesos2.png">
+        <label>
           <fieldset class="fieldset">
             <img class="franquisiasCard" src="IMG/franquisias_card.png">
             <legend><strong>VALIDADOR DE TARJETA</strong></legend>
             <br>
             <input type="text" id="numCard" minlength="11" maxlength="16" pattern="[0-9]+"
               placeholder=" 💳 Ingresar N° de Tarjeta " required>
+            <br>
             <br>
             <br>
             <button type="button" id="btnValidarCard">Validar</button>
@@ -113,16 +139,13 @@
             <img class="avatar" src="IMG/candado2.gif">
           </fieldset>
         </label>
-            </form>
-        </div>
-
-        <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
-
-        <div id="vista3" class="ocultar">
-            <form action="" method="get">
-
-                <img class="procesos" src="IMG/procesos3.png">
-                <label>
+      </form>
+    </section>
+    <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
+    <section id="vista4" class="ocultar">
+      <form action="" method="get">
+        <img class="procesos" src="IMG/procesos3.png">
+        <label>
           <fieldset class="fieldset">
             <img class="franquisiasCard" src="IMG/franquisias_card.png">
             <legend><strong> PAGA RÁPIDO CON PAGENTO </strong></legend>
@@ -175,18 +198,18 @@
             <button type="button" id="btnRegresar2">Regresar</button>
           </fieldset>
         </label>
-            </form>
-        </div>
-
-        <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
-
-        <div id="vista4" class="ocultar">
-            <form action="" method="get">
-                <img class="procesos" src="IMG/procesos4.png">
-                <label>
+      </form>
+    </section>
+    <!-- Creando formulario con los campos requeridos para simular un pasarela de pagos  -->
+    <section id="vista5" class="ocultar">
+      <form action="" method="get">
+        <img class="procesos" src="IMG/procesos4.png">
+        <label>
           <fieldset class="fieldset">
             <legend><strong>RESUMEN DE PAGO </strong></legend>
             <strong>
+              <br>
+              <br>
               <p> Laboratoria S.A.C </p>
               <p> RUC 20566216281 </p>
               <br>
@@ -218,37 +241,19 @@
             <button type="button" id="btnFinalizar">Finalizar</button>
           </fieldset>
         </label>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="cjaFooter">
-            <img class="logoFooter" src="IMG/logoLabWhite.png" alt="">
-            <div class="footer1">
-                <p class="itemFooter">CONTÁCTENOS</p>
-                <P class="itemFooter">Contáctenos</P>
-                <p class="itemFooter">Blog</p>
-            </div>
-
-            <div class="footer2">
-                <p class="itemFooter">INVOLÚCRATE</p>
-                <P class="itemFooter">Postula al Bootcamp</P>
-                <p class="itemFooter">Contrata Talento</p>
-                <p class="itemFooter">Corporate Training</p>
-                <p class="itemFooter">Trabaja con Nosotros</p>
-            </div>
-
-            <strong>
-        <p class="piepag">© Copyright by Shirley Garrido Navarro - 2020</p>
-      </strong>
-        </div>
-    </footer>
-
-
-
-
-    <script src="index.js" type="module"></script>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <br>
+      <p>© Copyright by Shirley Garrido Navarro - 2020</p>
+      <br>
+      <p>Esta pagina web, es la propuesta de actualizaciòn para la pagina web vigente de Laboratoria,<br>
+        en la cual se ha implementado un sistema de pagos para Estudiantes y Egresadas</p>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
