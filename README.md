@@ -4,11 +4,12 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
+* [3. Prototipo & Arquitectura de la Infomaciòn](#3-prototipo-&-arquitectura-de-la-informacion)
+* [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
+* [5. Consideraciones generales](#5-consideraciones-generales)
+* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
+* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 
 ***
 
@@ -39,7 +40,13 @@ necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
 experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
 etc.
 
-## 3. Objetivos de aprendizaje
+## 3. Prototipo & Arquitectura de la Infomaciòn
+
+![Prototipo](https://user-images.githubusercontent.com/60928765/78186453-659a0180-7432-11ea-951e-74f584d3b163.png)
+![Flujo Vista Principal](https://user-images.githubusercontent.com/60928765/78186452-65016b00-7432-11ea-890a-8882d5a6886d.png)
+![Flujo Card Validation](https://user-images.githubusercontent.com/60928765/78186449-63d03e00-7432-11ea-9d1c-6f23644bdd12.png)
+
+## 4. Objetivos de aprendizaje
 
 El objetivo principal de aprendizaje es adquirir experiencia desarrollando
 aplicaciones web (WebApp) que interactúen con el usuario a través del navegador
@@ -50,48 +57,48 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### UX
 
-* [ ] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-* [ ] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
-* [ ] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
+* [✔️] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [✔️] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
+* [✔️] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
 
 ### HTML y CSS
 
-* [ ] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
-* [ ] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
+* [✔️] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [✔️] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
+* [✔️] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
 
 ### DOM
 
-* [ ] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
-* [ ] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
-* [ ] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [✔️] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
+* [✔️] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
+* [✔️] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 
 ### Javascript
 
-* [ ] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
-* [ ] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
-* [ ] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
-* [ ] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
-* [ ] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [ ] Utilizar ES Modules (`import` | `export`).
+* [✔️] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
+* [✔️] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
+* [✔️] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
+* [✔️] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
+* [✔️] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
+* [✔️] Utilizar ES Modules (`import` | `export`).
 
 ### Testing
 
-* [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+* [✔️] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Git y GitHub
 
-* [ ] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
+* [✔️] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
   (`add` | `commit` | `pull` | `status` | `push`).
-* [ ] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
+* [✔️] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
 
 ### Buenas prácticas de desarrollo
 
-* [ ] Organizar y dividir el código en módulos (Modularización).
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica).
-* [ ] Uso de linter para seguir buenas prácticas (ESLINT).
+* [✔️] Organizar y dividir el código en módulos (Modularización).
+* [🥴] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+* [🥴] Uso de linter para seguir buenas prácticas (ESLINT).
 
-## 4. Consideraciones generales
+## 5. Consideraciones generales
 
 * Este proyecto se debe resolver de manera individual.
 * El proyecto será entregado subiendo tu código a GitHub (`commit`/`push`) y la
@@ -101,7 +108,7 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
   primer Sprint (una semana) y al final, trata de fijar un estimado de cuándo lo
   terminarás.
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 6. Criterios de aceptación mínimos del proyecto
 
 Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].
 
@@ -238,7 +245,7 @@ mínimo del 50% de _branches_ (ramas).
 
 ***
 
-## 6. Consideraciones técnicas
+## 7. Consideraciones técnicas
 
 La lógica del proyecto debe estar implementada completamente en JavaScript. En
 este proyecto NO está permitido usar librerías o frameworks, sólo
@@ -291,7 +298,7 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
 ***
 
-## 7. Pistas, tips y lecturas complementarias
+## 8. Pistas, tips y lecturas complementarias
 
 ### Primeros pasos
 
